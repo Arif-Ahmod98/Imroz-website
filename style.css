@@ -16,9 +16,31 @@ h5,
 h6 {
   font-family: "Montserrat", sans-serif;
 }
+img {
+  width: 100%;
+}
 main {
   max-width: 90%;
   margin: auto;
+}
+nav .fas {
+  display: none;
+}
+#scroll {
+  color: #fff;
+  display: block;
+  position: fixed;
+  right: 38px;
+  bottom: 38px;
+  background: black;
+  padding: 7px 15px;
+  font-size: 22px;
+  border-radius: 50%;
+  z-index: 3;
+  transition: 0.3s;
+}
+#scroll:hover {
+  transform: translateY(-6px);
 }
 #header-main {
   width: 100%;
@@ -27,6 +49,7 @@ main {
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 150vh;
+  padding: 10px 0px;
 }
 nav {
   display: flex;
@@ -61,7 +84,7 @@ nav ul li a:hover {
 }
 .default-btn {
   display: block;
-  padding: 10px 19px;
+  padding: 11px 22px;
   font-size: 14px;
   text-transform: uppercase;
   color: #fff;
@@ -106,7 +129,7 @@ nav ul li a:hover {
   color: #fa2d8c;
   display: block;
   margin-bottom: 10px;
-  font-size: 48px;
+  font-size: 46px;
 }
 .content-col h4 {
   color: #fff;
@@ -125,12 +148,7 @@ nav ul li a:hover {
   width: 100%;
   padding: 70px 0px;
 }
-.default-title {
-  text-align: center;
-}
-.default-title {
-  text-align: center;
-}
+
 .default-title {
   text-align: center;
   font-size: 50px;
@@ -145,4 +163,296 @@ nav ul li a:hover {
 }
 .demo-row {
   margin-top: 40px;
+}
+.demo-menuBar ul li {
+  color: #fff;
+}
+.demo-menuBar {
+  text-align: center;
+  margin: 35px 0px;
+  padding: 20px 0px;
+}
+.demo-menuBar ul {
+  text-align: center;
+  display: inline-block;
+  border: 1px solid gray;
+  border-radius: 30px;
+  cursor: pointer;
+}
+.demo-menuBar ul li {
+  display: inline-block;
+  list-style: none;
+  font-weight: 700;
+  padding: 16px 35px;
+  color: gray;
+  border: 1px solid transparent;
+  border-radius: 30px;
+  transition: 0.3s;
+  margin: -1px;
+}
+.active,
+.demo-menuBar ul li:hover {
+  color: #fff !important;
+  background-color: #f4287df2;
+  border: 1px solid #f4287df2;
+}
+.demo-row-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  width: 100%;
+}
+
+.demo-col1 {
+  flex-basis: 31%;
+  transition: 0.4s;
+  margin-bottom: 60px;
+}
+.demo-col1:hover {
+  transform: translateY(-10px);
+}
+.demo-col1 img {
+  border-radius: 5px;
+  cursor: pointer;
+}
+.overlay-parents {
+  position: relative;
+  cursor: pointer;
+}
+.overlay-parents h1 {
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  color: #fff;
+  width: 100%;
+  background: #000;
+  text-align: center;
+  padding: 12px 0px;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 0px 0px 5px 5px;
+}
+.overlay-img {
+  position: absolute;
+  background: black;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0px;
+  border-radius: 0px 0px 5px 5px;
+}
+
+/* =============INNER PAGES SECTION============= */
+#inner-main {
+  background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 1)), #fff;
+  width: 100%;
+  padding: 70px 0px;
+}
+
+.inner-title {
+  text-align: center;
+  margin-top: 40px;
+}
+
+/* =============FEATURES SECTION============= */
+
+#features-main {
+  padding: 70px 0px;
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), #fff;
+  width: 100%;
+}
+.features-title {
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 40px;
+  padding: 40px 0px;
+}
+.features-title .default-title {
+  font-size: 19px;
+  padding: 20px 0px;
+  margin-bottom: -7px;
+}
+.features-title h1 {
+  color: #fff;
+  font-size: 50px;
+  font-weight: 700;
+}
+.awesome-row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.awesome-col {
+  flex-basis: 49%;
+  text-align: left;
+  box-sizing: border-box;
+  padding: 30px 30px;
+  background: linear-gradient(rgba(0, 0, 0, 0.911), rgba(0, 0, 0, 0.911));
+  border-radius: 10px;
+  margin: 10px 0px;
+  transition: 0.3s;
+}
+.awesome-col:hover {
+  transform: translateY(-7px);
+}
+.awesome-col span {
+  color: #fff;
+  display: block;
+  margin-bottom: 11px;
+  font-size: 40px;
+}
+.awesome-col h5 {
+  color: #fff;
+  font-size: 21px;
+  font-weight: 700;
+  margin-bottom: 18px;
+}
+/************START ICON COLOR **************/
+#react {
+  color: #fe1596;
+}
+span#device {
+  color: #0066ff;
+}
+span#code {
+  color: #3ac9ff;
+}
+span#sass {
+  color: #1bfff4;
+}
+span#download {
+  color: #a51afc;
+}
+span#design {
+  color: #1855ff;
+}
+span#headphone {
+  color: #ff1fcf;
+}
+span#bootstrap {
+  color: #ff7a3a;
+}
+/************END ICON COLOR **************/
+
+/* =============FAQ SECTION============= */
+
+#FAQ-main {
+  padding: 70px 0px;
+  background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 1)), #fff;
+  width: 100%;
+}
+.FAQ-title {
+  max-width: 70%;
+  margin: auto;
+  margin-top: 35px;
+}
+.FAQ-title .default-title {
+  font-size: 19px;
+  padding: 20px 0px;
+  margin-bottom: -7px;
+}
+
+.FAQ-title h1 {
+  color: #fff;
+  font-size: 50px;
+  font-weight: 700;
+  margin-bottom: 60px;
+}
+.FAQ-title ul {
+  list-style: none;
+}
+.FAQ-title ul li {
+  margin: 24px 0px;
+  border-bottom: 1px solid #555;
+  color: #fff;
+  padding: 14px 0px;
+  display: block;
+  text-decoration: none;
+  font-size: 19px;
+  font-weight: 600;
+  cursor: pointer;
+}
+#FAQ1 p {
+  font-size: 15px;
+  line-height: 25px;
+  color: gray;
+  margin-top: -14px;
+  display: none;
+}
+
+/* =============FOOTER SECTION============= */
+footer {
+  padding: 110px 0px;
+  width: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url(images/bg-image-34.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.footer-row {
+  width: 78%;
+  margin: auto;
+  text-align: center;
+  margin-top: 20px;
+}
+.footer-row p {
+  color: #fff;
+  display: block;
+  margin-bottom: 20px;
+  letter-spacing: 3px;
+}
+.footer-row .default-title {
+  margin-bottom: 35px;
+}
+
+.footer-row .default-btn {
+  margin: auto;
+  padding: 19px 40px;
+  font-size: 15px;
+  border-radius: 45px;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+details p {
+  color: #fff;
+}
+
+/* 
+================================
+    MEDIA QUERY
+================================
+
+
+*/
+@media only screen and (max-width: 768px) {
+  nav .fas {
+    color: #fff;
+    display: block;
+    font-size: 20px;
+    margin: 10px;
+  }
+  nav #navLinks {
+    margin-right: 0px;
+    width: 280px;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    background: #1c1c1c;
+    text-align: left;
+    box-sizing: border-box;
+    min-height: 100vh;
+    padding: 10px 20px;
+  }
+  nav ul li {
+    display: block;
+    margin-top: 25px;
+  }
+  nav ul li a {
+    font-size: 20px;
+    font-weight: 400;
+  }
 }
