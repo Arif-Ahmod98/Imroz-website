@@ -5,28 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Imroz website</title>
+    <!-- Font awesome cdn -->
     <script src="https://kit.fontawesome.com/ba2b6da4f2.js" crossorigin="anonymous"></script>
 
+    <!-- Jquery plugin -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- Css link -->
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <!-- ============HEADER SECTION============ -->
+
     <header id="header-main">
       <a href="#header-main" id="scroll"><i class="fas fa-chevron-up"></i></a>
       <main>
         <nav>
           <img src="images/logo (1).png" class="logo" />
 
-          <ul>
-            <i class="fas fa-times"></i>
+          <ul id="navLinks">
+            <i class="fas fa-times" onclick="hideMenu()"></i>
             <li><a href="#">View Demo</a></li>
-            <li><a href="#">Features</a></li>
+            <li><a href="#features-main">Features</a></li>
             <li><a href="#">Documentation</a></li>
             <li><a href="#">Friendly Support</a></li>
           </ul>
           <div class="buy-now">
             <button type="button" class="default-btn">Buy Now</button>
+            <i class="fas fa-bars" onclick="showMenu()"></i>
           </div>
-          <i class="fas fa-bars"></i>
         </nav>
       </main>
       <main>
@@ -292,6 +298,16 @@
           $("#fifth5").slideToggle();
         });
       });
+    </script>
+    <!-- MenuBar js -->
+    <script>
+      let navLinks = document.getElementById("navLinks");
+      function showMenu() {
+        navLinks.style.right = "0px";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-280px";
+      }
     </script>
   </body>
 </html>

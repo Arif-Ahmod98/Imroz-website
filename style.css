@@ -54,6 +54,7 @@ nav .fas {
 nav {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   padding: 20px 0px;
 }
 nav .logo {
@@ -61,17 +62,17 @@ nav .logo {
   cursor: pointer;
 }
 
-nav ul {
+#navLinks {
   flex: 1;
   list-style: none;
   text-align: right;
   margin-right: 20px;
 }
-nav ul li {
+#navLinks li {
   margin-left: 5px;
   display: inline-block;
 }
-nav ul li a {
+#navLinks li a {
   text-decoration: none;
   color: #fff;
   transition: 0.3s;
@@ -79,8 +80,15 @@ nav ul li a {
   font-size: 16px;
   font-weight: 500;
 }
-nav ul li a:hover {
+#navLinks li a:hover {
   color: #fd4766;
+}
+.buy-now {
+  display: flex;
+  justify-content: space-between;
+}
+.buy-now .fas {
+  margin-left: 20px;
 }
 .default-btn {
   display: block;
@@ -116,6 +124,7 @@ nav ul li a:hover {
 .row-content {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   margin-top: 90px;
   padding: 25px 0px;
 }
@@ -431,28 +440,125 @@ details p {
 @media only screen and (max-width: 768px) {
   nav .fas {
     color: #fff;
-    display: block;
-    font-size: 20px;
+    display: inline-block;
+    font-size: 22px;
     margin: 10px;
+    cursor: pointer;
   }
-  nav #navLinks {
+  #navLinks {
     margin-right: 0px;
     width: 280px;
     position: fixed;
     top: 0px;
-    right: 0px;
+    right: -280px;
     background: #1c1c1c;
     text-align: left;
     box-sizing: border-box;
-    min-height: 100vh;
-    padding: 10px 20px;
+    height: 100%;
+    padding: 15px 20px;
+    z-index: 2;
+    transition: 0.4s;
   }
-  nav ul li {
+  #navLinks li {
     display: block;
     margin-top: 25px;
   }
-  nav ul li a {
+  #navLinks a {
     font-size: 20px;
     font-weight: 400;
+  }
+  .banner-title {
+    margin-top: 4%;
+  }
+  .banner-title h1 {
+    font-size: 54px;
+  }
+  .row-content {
+    margin-top: 30px;
+    padding: 25px 0px;
+  }
+  .content-col {
+    flex-basis: 49%;
+    padding: 5px 15px;
+  }
+
+  #demo-main {
+    padding: 40px 0px;
+  }
+
+  .default-title {
+    font-size: 40px;
+  }
+  .demo-menuBar ul {
+    border-bottom: 1px solid gray !important;
+    border: none;
+    border-radius: 0px;
+    padding: 20px;
+  }
+  .demo-menuBar ul li {
+    padding: 10px 15px;
+  }
+
+  .demo-col1 {
+    flex-basis: 48%;
+    transition: 0.4s;
+    margin-bottom: 35px;
+  }
+  #features-main {
+    padding: 60px 0px;
+  }
+  .features-title {
+    padding: 20px 0px;
+  }
+  .features-title h1 {
+    color: #fff;
+    font-size: 38px;
+    font-weight: 700;
+    font-family: "Poppins";
+  }
+  #FAQ-main {
+    padding: 40px 0px;
+  }
+  .FAQ-title h1 {
+    font-size: 40px;
+    margin-bottom: 25px;
+  }
+  .FAQ-title ul li {
+    margin: 15px 0px;
+    font-size: 20px;
+  }
+  footer {
+    padding: 60px 0px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  #header-main {
+    padding: 0px 0px;
+  }
+  .banner-title h1 {
+    font-size: 40px;
+  }
+  .content-col {
+    flex-basis: 100% !important;
+    padding: 5px 15px;
+  }
+  #demo-main {
+    padding: 25px 0px;
+  }
+  .demo-col1 {
+    flex-basis: 48%;
+  }
+  .demo-menuBar ul {
+    border-bottom: 1px solid gray !important;
+    border: none;
+    border-radius: 0px;
+    padding: 0px;
+    padding-bottom: 20px;
+  }
+  .demo-menuBar ul li {
+    padding: 10px 15px;
+  }
+  .default-p {
+    font-size: 15px;
   }
 }
